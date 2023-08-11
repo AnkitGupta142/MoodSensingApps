@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoodSensingApp</name>
+    </assembly>
+    <members>
+        <member name="M:MoodSensingApp.Controllers.LocationsController.#ctor(MoodSensingApp.Services.ILocationService,Microsoft.AspNetCore.Http.IHttpContextAccessor,MoodSensingApp.Services.IMoodService)">
+            <summary>
+            Location constructor
+            </summary>
+            <param name="locationService"></param>
+            <param name="httpContextAccessor"></param>
+            <param name="moodService"></param>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.LocationsController.GetClosestHappyLocation">
+            <summary>
+            API endpoint to get the closet location where logged in user is happy
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.MoodsController.#ctor(MoodSensingApp.Services.ILocationService,Microsoft.AspNetCore.Http.IHttpContextAccessor,MoodSensingApp.Services.IFaceRecognitionService,MoodSensingApp.Services.IMoodService)">
+            <summary>
+            Moods constructor
+            </summary>
+            <param name="locationService"></param>
+            <param name="httpContextAccessor"></param>
+            <param name="faceRecognitionService"></param>
+            <param name="moodService"></param>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.MoodsController.UploadMoodCaptureAsync(MoodSensingApp.RequestModels.MoodCaptureRequest)">
+            <summary>
+            API Endpoint to capture the mood of uploaded image, identify logged in user location via its ip address
+            </summary>
+            <param name="request">Mood Capture Request</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.MoodsController.GetMoodFrequency">
+            <summary>
+            API endpoint to get the mood frequency of logged in user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.UserController.Register(MoodSensingApp.RequestModels.RegisterModel)">
+            <summary>
+            Regiter the user with this api
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MoodSensingApp.Controllers.UserController.Login(MoodSensingApp.RequestModels.LoginModel)">
+            <summary>
+            API endpoint responsible for 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
